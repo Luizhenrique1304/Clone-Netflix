@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.Logo {
+    width: 100px;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.banner {
+    background: url(img/stranger-things-4-poster.jpg) center center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+.banner.fade-out {
+    opacity: 0;
+}
+.banner {
+    position: relative;
+    z-index: 1;
+}
+.banner h1 {
+    font-size: 3rem;
+}
+
+.banner button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.row {
+    padding: 20px;
+    margin: 30px 0;
+    color: white;
+}
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.row-posters {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+.row-posters::-webkit-scrollbar {
+    display: none;
+}
+.row-posters{
+    scrollbar-width: none;
+}
+.row-posters img {
+    width: 150px;
+    height: 225px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+.row-posters img:hover {
+    transform: scale(1.1);
+}
+.arrow {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+}
+.left { left: 0; }
+.right { right: 0; }
