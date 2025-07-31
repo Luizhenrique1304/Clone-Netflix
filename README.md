@@ -25,5 +25,6 @@ Um clone simplificado da interface inicial da Netflix, desenvolvido para fins de
 
 -Adicionar login e autenticação ficticia
 
-
+## Acesso
+Acesse a pagina clicando [aqui](https://luizhenrique1304.github.io/Clone-Netflix/)
 
